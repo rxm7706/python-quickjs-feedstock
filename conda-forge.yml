@@ -1,8 +1,13 @@
 github:
   branch_name: main
   tooling_branch_name: main
-conda_forge_output_validation: true
 conda_build:
-  pkg_format: '2'
+  error_overlinking: true
+conda_forge_output_validation: true
+provider:
+  linux_64: azure
+  osx_64: azure
+  osx_arm64: azure
+  win_64: azure
 bot:
   automerge: true
